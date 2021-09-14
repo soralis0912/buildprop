@@ -29,3 +29,6 @@ proguard/
 # Private
 *.jks
 .idea
+
+#keystore
+keystore/

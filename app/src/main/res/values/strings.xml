@@ -25,5 +25,13 @@
         <item>1</item>
         <item>0</item>
     </string-array>
+    <string-array name="pref_device_list_titles">
+        <item>Mi 10</item>
+        <item>Mi 11</item>
+    </string-array>
+    <string-array name="pref_device_list_values">
+        <item>Mi 10</item>
+        <item>Mi 11</item>
+    </string-array>
 
 </resources>

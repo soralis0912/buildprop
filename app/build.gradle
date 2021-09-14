@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 Properties properties = new Properties()
-properties.load(file('../../keystore/buildprop.properties').newDataInputStream())
+properties.load(file('../keystore/buildprop.properties').newDataInputStream())
 def KEYSTORE_ALIAS = properties.getProperty('KEYSTORE_ALIAS')
 def KEYSTORE_PASSWORD = properties.getProperty('KEYSTORE_PASSWORD')
 
@@ -21,13 +21,13 @@ android {
         debug {
             keyAlias KEYSTORE_ALIAS
             keyPassword KEYSTORE_PASSWORD
-            storeFile file('../../keystore/buildprop.keystore.jks')
+            storeFile file('../keystore/buildprop.keystore.jks')
             storePassword KEYSTORE_PASSWORD
         }
         release {
             keyAlias KEYSTORE_ALIAS
             keyPassword KEYSTORE_PASSWORD
-            storeFile file('../../keystore/buildprop.keystore.jks')
+            storeFile file('../keystore/buildprop.keystore.jks')
             storePassword KEYSTORE_PASSWORD
         }
     }
@@ -55,8 +55,8 @@ android {
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
-    compile 'com.android.support:support-v4:23.4.0'
-    provided 'de.robv.android.xposed:api:82'
-    provided 'de.robv.android.xposed:api:82:sources'
+    implementation fileTree(dir: 'libs', include: '*.jar')
+    implementation 'com.android.support:support-v4:23.4.0'
+    compileOnly 'de.robv.android.xposed:api:82'
+    compileOnly 'de.robv.android.xposed:api:82:sources'
 }

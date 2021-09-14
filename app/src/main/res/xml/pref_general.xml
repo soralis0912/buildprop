@@ -38,13 +38,91 @@
         android:summary="@string/enable_debug_webview_summary"
         android:title="@string/enable_debug_webview_title" />
 
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/pref_device_list_titles"
+        android:entryValues="@array/pref_device_list_values"
+        android:key="ro.product.model"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/default_value"
+        android:title="ro.product.model" />
+
+
+    <ListPreference
+        android:defaultValue="Mi 10"
+        android:entries="@array/pref_device_list_titles"
+        android:entryValues="@array/pref_device_list_values"
+        android:key="ro.product.system.model"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/default_value"
+        android:title="ro.product.system.model" />
+
+
+    <ListPreference
+        android:defaultValue="Mi 10"
+        android:entries="@array/pref_device_list_titles"
+        android:entryValues="@array/pref_device_list_values"
+        android:key="ro.product.vendor.model"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/default_value"
+        android:title="ro.product.vendor.model" />
+
+
+    <ListPreference
+        android:defaultValue="Mi 10"
+        android:entries="@array/pref_device_list_titles"
+        android:entryValues="@array/pref_device_list_values"
+        android:key="ro.product.product.model"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/default_value"
+        android:title="ro.product.product.model" />
+
+
+    <ListPreference
+        android:defaultValue="Mi 10"
+        android:entries="@array/pref_device_list_titles"
+        android:entryValues="@array/pref_device_list_values"
+        android:key="ro.product.product.model"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/default_value"
+        android:title="ro.product.product.model" />
+
+
+    <ListPreference
+        android:defaultValue="Mi 10"
+        android:entries="@array/pref_device_list_titles"
+        android:entryValues="@array/pref_device_list_values"
+        android:key="ro.product.odm.model"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/default_value"
+        android:title="ro.product.odm.model" />
+
+
+    <ListPreference
+        android:defaultValue="Mi 10"
+        android:entries="@array/pref_device_list_titles"
+        android:entryValues="@array/pref_device_list_values"
+        android:key="ro.product.system_ext.model"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/default_value"
+        android:title="ro.product.system_ext.model" />
+
+
     <Preference
         android:key="support"
         android:title="@string/support">
 
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://github.com/jecelyin/buildprop" />
+            android:data="https://github.com/soralis_0912/buildprop" />
 
     </Preference>
 </PreferenceScreen>
